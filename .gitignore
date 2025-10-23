@@ -1,0 +1,9 @@
+package-lock.json
+node_modules/
+db.sqlite3
+output.css
+*.pyc
+*.log
+*.pot
+*.pyc
+__pycache__

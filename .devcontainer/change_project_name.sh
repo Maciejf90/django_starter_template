@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Changing project name to: [ $1 ]"
 mv django_starter_app "$1"
-sed -i "s/django_starter_app/$1/g" *
+find . -type f -exec sed -i "s/django_starter_app/$1/g" {} \;
 cd "$1"
 mv django_starter_app "$1"
 
